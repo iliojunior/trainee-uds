@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of Page</title>
+    <meta charset="utf-8">
+    <style>
+      html, body {
+        height: 100%;
+        overflow: hidden;
+      }
+
+      .bg {
+        z-index: 0;
+        animation: giraGiraIgor 5s infinite linear;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      }
+
+      .pg {
+        padding-top: 100px;
+      }
+
+      .nome {
+        color: black;
+        background-color: white;
+      }
+
+      .my-picture {
+        height: 100px;
+        width: 100px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        animation: harryPorra 3s infinite;
+      }
+
+      .my-picture img {
+        max-height: 100%;
+      }
+
+      .text-center {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      @keyframes giraGiraIgor {
+        from {
+          transform: rotate(0);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes harryPorra {
+        0% {
+          box-shadow: 0px 0px 0px #000000;
+          transform: rotate(0);
+          transform-origin:left top;
+        }
+
+        50% {
+          box-shadow: 0px 0px 10px #000000;
+          transform: rotate(1200deg);
+          transform-origin:right bottom;
+        }
+
+        75% {
+          box-shadow: 0px 0px 0px #000000;
+          transform: rotate(220deg);
+          transform-origin:right top;
+        }
+        100% {
+          box-shadow: 0px 0px 0px #000000;
+          transform: rotate(360deg);
+          transform-origin:left bottom;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="bg">
+      <img src="vassoura.png"/>
+    </div>
+    <div class="pg">
+      <div class="nome text-center">
+        <h1>
+          Mu Little Pôney eu
+        </h1>
+      </div>
+      <div class="my-picture text-center">
+        <img src="harryPorra.jpg" />
+      </div>
+    </div>
+  </body>
+</html>
